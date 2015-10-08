@@ -63,6 +63,7 @@ namespace ProtOne
             }
 
         }
+
         /// <summary>
         /// This is the CLEAR button
         /// </summary>
@@ -72,6 +73,7 @@ namespace ProtOne
         {
             clearFields();
         }
+
         /// <summary>
         /// This is the NEW User Button
         /// </summary>
@@ -79,8 +81,11 @@ namespace ProtOne
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-
+            // go to new user form
+            NewUser f = new NewUser();
+            f.ShowDialog(); // it will not hide this form, it will just place it on the background, unaccessible
         }
+
         /// <summary>
         /// It clears all the texfields of the form
         /// </summary>
